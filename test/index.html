@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Simple text counter plugin</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../lib/bootstrap.min.css" rel="stylesheet">
+        <link href="../src/jquery.textcounter.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" id="text1" data-count-max-length="30" class="form-control" />
+            </div>
+        </div>
+        <p></p>
+        <div class="row">
+            <div class="col-md-4">
+                <textarea cols="6" id="text2" class="form-control"></textarea>
+            </div>
+        </div>
+    <script src="../lib/jquery-1.11.1.min.js"></script>
+    <script src="../src/jquery.textcounter.js"></script>
+    <script>
+        $("#text1").textcounter({
+            reverse: false
+        });
+        $("#text2").textcounter({
+            maxlength: 50
+        })
+    </script>
+    </body>
+</html>

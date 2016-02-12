@@ -1,0 +1,8 @@
+div .textcounter-count {
+    color: #0078A1;
+    position: absolute;
+    right: 11px;
+    bottom: 1px;
+    font-size: 13px;
+    background: #fff;
+}
